@@ -9,7 +9,6 @@ def generate_request():
     request_queue.put(request_data)
     print(f"Сгенеровано: {request_data}")
 
-
 def process_request():
     if not request_queue.empty():
         request_data = request_queue.get()
